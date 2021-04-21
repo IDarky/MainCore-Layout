@@ -19,7 +19,7 @@ respawnDialog = 0;
 //respawnButton = 0;
 enableTeamSwitch = 0;
 
-minPlayerDistance = 30;
+minPlayerDistance = 50;
 wreckManagerMode = 1;
 wreckLimit = 5;
 wreckRemovalMinTime = 1800; // wenn das Limit erreicht/überschritten
@@ -30,7 +30,7 @@ corpseRemovalMinTime = 15; // 300 - wenn das Limit erreicht/überschritten
 corpseRemovalMaxTime = 300; // wenn das Limit nicht erreicht
 
 forceRotorLibSimulation = 0;
-enableDebugConsole[] = {"76561198029318101"}; //enableDebugConsole = 1;
+enableDebugConsole[] = {"76561198029318101","76561198127241859"}; //enableDebugConsole = 1;
 enableTargetDebug = 1;
 joinUnassigned = 1;
 disabledAI = 1;
@@ -56,11 +56,13 @@ class CfgRemoteExec
 	class Commands {mode=2; jip=1;};
 };
 
-class CfgDebriefingSections
+/*class CfgDebriefingSections
 {
 	class acex_killTracker
 	{
 		title = "Acex Killed Events";
 		variable = "acex_killTracker_outputText";
 	};
-};
+};*/
+
+#include "Loadouts.hpp"
